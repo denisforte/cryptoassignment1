@@ -3,3 +3,5 @@ Additional materials related to Bitcoin and Cryptocurrency Technologies course o
 
 another line added
 and another one
+and third line
+and 4th line
