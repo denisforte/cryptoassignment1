@@ -6,3 +6,4 @@ and another one
 and third line
 and 4th line
 add 5th line
+line 6
