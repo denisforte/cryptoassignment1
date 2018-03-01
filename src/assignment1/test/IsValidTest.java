@@ -8,6 +8,8 @@ import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SignatureException;
 
+import assignment1.Transaction;
+import assignment1.TxHandler;
 import org.junit.Test;
 /**
  * Unit tests for {@link TxHandler#isValidTx(Transaction)}
@@ -18,7 +20,7 @@ import org.junit.Test;
  * Test 3: test isValidTx() with transactions containing signatures using incorrect private keys
  * Test 4: test isValidTx() with transactions whose total output value exceeds total input value
  * Test 5: test isValidTx() with transactions that claim outputs not in the current utxoPool
- * Test 6: test isValidTx() with transactions that claim the same UTXO multiple times
+ * Test 6: test isValidTx() with transactions that claim the same assignment1.UTXO multiple times
  * Test 7: test isValidTx() with transactions that contain a negative output value
  * 
  * @author ealbertos
@@ -145,7 +147,7 @@ public class IsValidTest {
 		
 	}
 	
-    // Test 6: test isValidTx() with transactions that claim the same UTXO multiple times
+    // Test 6: test isValidTx() with transactions that claim the same assignment1.UTXO multiple times
 	@Test
 	public void testIsValidTransactionsClaimingTheSameUTXOSeveralTimes() throws NoSuchAlgorithmException, InvalidKeyException, SignatureException {
 		// Create a new set of transactions for testing				
